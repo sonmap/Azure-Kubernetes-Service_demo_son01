@@ -1,35 +1,32 @@
 variable "location" {
-  description = "Azure region"
   type        = string
+  description = "Azure region"
   default     = "koreacentral"
 }
 
 variable "location_short" {
-  description = "Short Azure region code"
   type        = string
+  description = "Short location code"
   default     = "krc"
 }
 
-variable "environment" {
-  description = "Environment name"
+variable "prefix" {
   type        = string
-  default     = "dev"
-}
-
-variable "name_prefix" {
-  description = "Common resource name prefix"
-  type        = string
+  description = "Resource name prefix"
   default     = "aks-store-demo"
 }
 
-variable "log_analytics_sku" {
-  description = "Log Analytics Workspace SKU"
+variable "environment" {
   type        = string
-  default     = "PerGB2018"
+  description = "Environment name"
+  default     = "dev"
 }
 
-variable "log_retention_days" {
-  description = "Log retention days"
-  type        = number
-  default     = 30
+variable "tags" {
+  type = map(string)
+  default = {
+    project     = "aks-store-demo"
+    environment = "dev"
+    owner       = "terraform"
+  }
 }
