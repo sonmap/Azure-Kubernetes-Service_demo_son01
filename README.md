@@ -42,6 +42,7 @@
 
 ## 3. 전체 아키텍처
 
+
 ![Uploading ChatGPT Image Jun 23, 2026, 11_37_36 PM.png…]()
 
 
