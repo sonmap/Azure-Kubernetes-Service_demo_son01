@@ -42,8 +42,7 @@
 
 ## 3. 전체 아키텍처
 
-
-![Uploading ChatGPT Image Jun 23, 2026, 11_37_36 PM.png…]()
+<img width="1536" height="1024" alt="ChatGPT Image Jun 23, 2026, 11_37_36 PM" src="https://github.com/user-attachments/assets/e8750073-c8b3-4ff8-909c-c80dcde360b2" />
 
 
 ```text
