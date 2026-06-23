@@ -27,7 +27,6 @@
 ---
 
 ## 2. 주요 목표
-![Uploading ChatGPT Image Jun 23, 2026, 11_37_36 PM.png…]()
 
 | 구분 | 내용 |
 |---|---|
@@ -42,6 +41,9 @@
 ---
 
 ## 3. 전체 아키텍처
+
+![Uploading ChatGPT Image Jun 23, 2026, 11_37_36 PM.png…]()
+
 
 ```text
 Internet / Browser
