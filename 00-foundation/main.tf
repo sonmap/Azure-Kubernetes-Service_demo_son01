@@ -1,17 +1,18 @@
 locals {
-  resource_group_name = "rg-${var.name_prefix}-${var.environment}-${var.location_short}"
-  log_analytics_name  = "log-${var.name_prefix}-${var.environment}-${var.location_short}"
+  name_suffix = "${var.environment}-${var.location_short}"
 }
 
 resource "azurerm_resource_group" "this" {
-  name     = local.resource_group_name
+  name     = "rg-${var.prefix}-${local.name_suffix}"
   location = var.location
+  tags     = var.tags
 }
 
 resource "azurerm_log_analytics_workspace" "this" {
-  name                = local.log_analytics_name
+  name                = "log-${var.prefix}-${local.name_suffix}"
   location            = azurerm_resource_group.this.location
   resource_group_name = azurerm_resource_group.this.name
-  sku                 = var.log_analytics_sku
-  retention_in_days   = var.log_retention_days
+  sku                 = "PerGB2018"
+  retention_in_days   = 30
+  tags                = var.tags
 }
